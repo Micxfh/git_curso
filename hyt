@@ -1,0 +1,437 @@
+1  ls
+    2  wc -l *csv
+    3  date
+    4  mv afluenciastc_desglosado_11_2023.csv metro.csv
+    5  ls
+    6  mv Casos_Diarios_Estado_Nacional_Confirmados_20230625.csv covid.csv
+    7  ls
+    8  wget https://datos.covid-19.conacyt.mx/Downloads/Files/Casos_Diarios_Estado_Nacional_Confirmados_20230625.csv
+    9  ls
+   10  ls C*
+   11  ls *Confirmados*
+   12  rm Casos_Diarios_Estado_Nacional_Confirmados_20230625.csv 
+   13  ls
+   14  cat metro.csv 
+   15  head metro.csv 
+   16  man head
+   17  head -n 1 metro.csv 
+   18  head -n 3 metro.csv 
+   19  man cut
+   20  cut -d, -f 1 metro.csv 
+   21  head metro.csv 
+   22  head metro.csv > temp.csv
+   23  ls
+   24  cat temp.csv
+   25  wc -l temp.csv 
+   26  cut -d, -f 2 temp.csv
+   27  cut -d, -f 5 temp.csv
+   28  man uniq
+   29  cut -d, -f 5 temp.csv > estaciones
+   30  cat estaciones
+   31  uniq estaciones
+   32  history
+   33  cut -d, -f 5 metro.csv > completo
+   34  wc -l completo
+   35  head completo 
+   36  cat completo 
+   37  uniq completo
+   38  uniq completo > resultado
+   39  head resultado
+   40  head -n 50 resultado
+   41  sort completo > resultado.estaciones
+   42  head -n 50 resultado.estaciones
+   43  sort -u completo > resultado.estaciones
+   44  head -n 50 resultado.estaciones
+   45  man sort
+   46  wc -l resultado.estaciones
+   47  history
+   48  less resultado.estaciones
+   49  less covid.csv 
+   50  man less
+   51  less -S resultado.estaciones
+   52  less -S covid.csv 
+   53  man grep
+   54  less resultado.estaciones
+   55  grep Balderas resultado.estaciones
+   56  grep -i xola resultado-estaciones
+   57  grep -i xola resultado.estaciones
+   58  grep -i puebla covid.csv > puebla
+   59  grep -i zacatecas covid.csv > puebla
+   60  grep -i puebla covid.csv > puebla
+   61  man tr
+   62  tr "," "+" puebla
+   63  grep 09-17 metro.csv 
+   64  grep 01-01 metro.csv 
+   65  grep 01-01 metro.csv | wc -l
+   66  history
+   67  exit
+   68  ls
+   69  ls -F
+   70  ls -l
+   71  who
+   72  less -s covid.csv
+   73  grep -i pue covid.csv 
+   74  grep -i pue covid.csv > puebla.csv
+   75  less -S puebla
+   76  grep -i pue covid.csv | less -S
+   77  grep -i pue covid.csv | cut -d, -f1
+   78  grep -i pue covid.csv | cut -d, -f2
+   79  grep -i pue covid.csv | cut -d, -f3
+   80  grep -i pue covid.csv | cut -d, -f4
+   81  grep -i pue covid.csv | cut -d, -f1-3
+   82  man cut
+   83  grep -i pue covid.csv | cut -d, -f1-3 --complement
+   84  man cut
+   85  grep -i son covid.csv | cut -d, -f1-3 --complement
+   86  grep -i ver covid.csv | cut -d, -f1-3 --complement
+   87  man bc
+   88  bc
+   89  ls
+   90  echo "HOLA 1.2.3"
+   91  echo "HOLA # 1+2+3"
+   92  echo "(1+2+3)*2" | bc
+   93  echo "(12121212*2)" | bc 
+   94  echo "0,1,2,3,4" | bc 
+   95  echo "0,1,2,3,4" | tr "," "+"
+   96  echo "0,1,2,3,4" | tr "," "+" | bc
+   97  grep -i ver covid.csv | cut -d, -f1-3 --complement | tr "," "+"
+   98  grep -i ver covid.csv | cut -d, -f1-3 --complement | tr "," "+" | bc
+   99  #grep -i ver covid.csv | cut -d, -f1-3 --complement | tr "," "+" | bc
+  100  vim
+  101  vim procesa-covid grep -i ver covid.csv | cut -d, -f1-3 --complement | tr "," "+" | bc
+  102  ls
+  103  #grep -i ver covid.csv | cut -d, -f1-3 --complement | tr "," "+" | bc
+  104  vim
+  105  vim procesa
+  106  vim metro.csv
+  107  vim covid.csv
+  108  ls -l
+  109  cat procesa
+  110  id
+  111  pwd
+  112  ls /opt/cursos/
+  113  ls -l /opt/cursos/
+  114  ls -lF /opt/cursos/
+  115  ls -lF /opt/
+  116  ls -lF /
+  117  #grep -i ver covid.csv | cut -d, -f1-3 --complement | tr "," "+" | b
+  118  history
+  119  chmod u-w procesa
+  120  ls -l procesa
+  121  chmod u+x procesa
+  122  ls -l procesa
+  123  chmod g+w procesa
+  124  chmod u+w procesa
+  125  chmod o+w procesa
+  126  cat procesa
+  127  vim procesa
+  128  ls
+  129  ./procesa
+  130  chmod u+x procesa
+  131  vim procesa
+  132  ./procesa
+  133  vim procesa
+  134  ./procesa
+  135  vim procesa
+  136  ./procesa
+  137  vim procesa
+  138  ./procesa puebla
+  139  ./procesa ver
+  140  vim procesa
+  141  ./procesa ver
+  142  vim procesa
+  143  ./procesa qu
+  144  less -S covid.csv
+  145  cat covid.csv | cut -d, -f3
+  146  ./procesa dis
+  147  ./procesa quere
+  148  ./procesa "SAN LUIS POTOSI"
+  149  vim proces
+  150  cat procesa 
+  151  vim procesa
+  152  ./procesa "SAN LUIS POTOSI"
+  153  vim procesa
+  154  ./procesa "SAN LUIS POTOSI"
+  155  vim procesa
+  156  ./procesa "SAN LUIS POTOSI"
+  157  vim procesa
+  158  cat covid.csv | cut -d, -f3
+  159  cat covid.csv | cut -d, -f3 | grep -v Nacional
+  160  cat covid.csv | cut -d, -f3 | grep -v Nacional | grep -v nombre
+  161  vim procesa 
+  162  ls
+  163  mkdir programas
+  164  ls
+  165  ls -F
+  166  cd programas/
+  167  ls
+  168  vim ciclos
+  169  chmod u+x ciclos
+  170  ls -l
+  171  ./ciclos
+  172  vim ciclos 
+  173  ./ciclos
+  174  vim ciclos 
+  175  cd ..
+  176  ls
+  177  pwd
+  178  cp covid.csv procesa programas/
+  179  ls
+  180  ls programas/
+  181  ./procesa
+  182  vim procesa
+  183  for archivos in *; do echo $archivos; done
+  184  for ARCHIVO in *.csv; do echo $ARCHIVO; done
+  185  ls *
+  186  for ARCHIVO in $(ls *) ; do echo $ARCHIVO ; done
+  187  cat procesa
+  188  for ARCHIVO in $(cat covid.csv | cut -d, -f3 | grep -v Nacional | grep -v nombre) ; do echo $ARCHIVO ; done
+  189  for ARCHIVO in $(cat covid.csv | cut -d, -f3 | grep -v Nacional | grep -v nombre) ; do echo " procesando estado:$ARCHIVO" ; done
+  190  vim procesa
+  191  vim ciclos
+  192  for ESTADO in $(cat covid.csv | cut -d, -f3 | grep -v Nacional | grep -v nombre) ; do ./procesa $ESTADO ; done
+  193  vim procesa
+  194  for ESTADO in $(cat covid.csv | cut -d, -f3 | grep -v Nacional | grep -v nombre) ; do ./procesa $ESTADO ; done
+  195  vim procesa
+  196  for ESTADO in $(cat covid.csv | cut -d, -f3 | grep -v Nacional | grep -v nombre) ; do ./procesa $ESTADO ; done
+  197  vim procesa
+  198  for ESTADO in $(cat covid.csv | cut -d, -f3 | grep -v Nacional | grep -v nombre) ; do ./procesa $ESTADO ; done
+  199  vim procesa
+  200  for ESTADO in $(cat covid.csv | cut -d, -f3 | grep -v Nacional | grep -v nombre) ; do ./procesa $ESTADO ; done
+  201  for ESTADO in $(cat covid.csv | tr " " "-" | cut -d, -f3 | grep -v Nacional | grep -v nombre) ; do ./procesa $ESTADO ; done
+  202  cat covid.csv |tr " " "-" > covid2.csv
+  203  for ESTADO in $(cat covid2.csv | tr " " "-" | cut -d, -f3 | grep -v Nacional | grep -v nombre) ; do ./procesa $ESTADO ; done
+  204  vim procesa
+  205  for ESTADO in $(cat covid2.csv | cut -d, -f3 | grep -v Nacional | grep -v nombre) ; do ./procesa $ESTADO ; done
+  206  vim procesa
+  207  for ESTADO in $(cat covid2.csv | cut -d, -f3 | grep -v Nacional | grep -v nombre) ; do ./procesa $ESTADO ; done
+  208  vim procesa
+  209  history
+  210  cal 2001
+  211  cal 2040
+  212  less -S covid2.csv
+  213  #sustituir espacios
+  214  ./procesa
+  215  vim procesa
+  216  ./procesa
+  217  ./procesa | sort 
+  218  vim procesa
+  219  cat covid2.csv
+  220  ./procesa | sort -k 2 -n
+  221  history
+  222  vim procesa
+  223  ./procesa
+  224  vim procesa
+  225  ls -F -l /
+  226  #la primera letra indica el tipo de archivo que es F
+  227  #BASH 
+  228  awk -F, '{ print $3  }' covid2.csv
+  229  awk -F, '{ print $1  }' covid2.csv
+  230  awk -F, '{ print $1$3  }' covid2.csv
+  231  awk -F, '{ print $1,$3  }' covid2.csv
+  232  awk -F, '{ print $3,$2  }' covid2.csv
+  233  awk -F, '{ print $3,$2,$3  }' covid2.csv
+  234  awk -F, '{ print $3,$2  }' covid2.csv | grep Sin
+  235  awk -F, '{ print $3,$2  }' covid2.csv | grep SIN
+  236  awk -F, '{ print $3,$2  }' covid2.csv | grep OAX
+  237  cat covid2.csv | awk -F, '{$3,$4,$5}'
+  238  cat covid2.csv | awk -F, '{print $3,$4,$5}'
+  239  cat covid2.csv | awk -F, '{print $3,$4,$5}'| head
+  240  cat covid2.csv | awk -F, '{print $3,$75}'| head
+  241  cat covid2.csv | awk -F, '{print $3,$95}'| head
+  242  man tr
+  243  head -n 1 covid2.csv | tr " " "
+  244  head n -1 covid2.csv | tre "," "/n"
+  245  head -n 1 covid2.csv | tr "," "/n"
+  246  tail -n 1 covid2.csv | awk -F, '{print $220}'
+  247  head -n 1 covid2.csv | tr "," "\n"
+  248  head -n 1 covid2.csv | tr "," "\n" | nl | grep 21-09
+  249  tail -n 1 covid2.csv | awk -F, '{print $212,$577,$942}'
+  250  #casos registrados en esos dias
+  251  head -n 1 covid2.csv | tr "," "\n" | nl | grep 09-2021
+  252  tail -n 1 covid2.csv | awk -F, '{print $212,$577,$942}'
+  253  grep MEXICO covid2.csv | tr "," "\n"| less -S
+  254  head -n 1 covid2.csv | tr "," "\n" > columnaX
+  255  grep VERACRUZ covid2.csv | tr "," "\n" > columnaY
+  256  paste columnaX columnaY
+  257  history
+  258  paste columnaX columnaY | less -S
+  259  paste columnaY columnaX | less -S
+  260  paste columnaX columnaY | less -S > mexico.csv
+  261  paste columnaX columnaY | less -S > mexico.csv | less -S
+  262  paste columnaX columnaY > mexico.csv
+  263  paste columnaX columnaY > mexico.csv | less -S
+  264  paste columnaX columnaY | less -S
+  265  paste columnaX columnaY > mexico.csv
+  266  grep 09-2020 mexico.cvs
+  267  grep 09-2020 mexico.cvs | less -S
+  268  paste columnaX columnaY >mexico.csv
+  269  grep 09-2020 mexico.cvs | awk '{VAR = VAR + $2; print VAR} '
+  270  paste columnaX columnaY | less -S
+  271  paste columnaX columnaY > mexico.cvs
+  272  grep 09-2020 mexico.cvs | awk '{VAR = VAR + $2; print VAR} '
+  273  grep 09-2020 mexico.cvs | awk '{VAR = VAR + $2; print VAR} '| yail -n 1
+  274  grep 09-2020 mexico.cvs | awk '{VAR = VAR + $2; print VAR} '| tail -n 1
+  275  vim anual.covid
+  276  chmod a+x anual.covid
+  277  ./anual.covid
+  278  vim anual.covid
+  279  grep 09-2020 mexico.cvs | awk '{VAR = VAR + $2} ; END { print VAR} '| tail -n 1
+  280  grep 09-2020 mexico.cvs | awk '{VAR = VAR + $2; print VAR} '| tail -n 1
+  281  grep 09-2020 mexico.cvs | awk 'BEGIN {print "Procesando..."} ; {VAR = VAR + $2} ; END { print VAR} '| tail -n 1
+  282  grep 09-2020 mexico.cvs | awk 'BEGIN { print "Procesando..." } ; {VAR = VAR + $2} ; END { print VAR} '| tail -n 1
+  283  grep 09-2020 mexico.cvs | awk 'BEGIN { print "Procesando..." } ; {VAR = VAR + $2} ; END { print VAR} '
+  284  grep 2020 mexico.cvs | awk 'BEGIN { print "Procesando..." } ; {VAR = VAR + $2} ; END { print VAR} '
+  285  #podria existir un escenario donde exista un dia con 2020 casos, en ese caso nos mostrará esos datos, por lo tanto es necesario refinar nuestra busqueda
+  286  grep 2020  mexico.cvs # | awk 'BEGIN { print "Procesando..." } ; {VAR = VAR + $2} ; END { print VAR} '
+  287  grep -- -2020  mexico.cvs  | awk 'BEGIN { print "Procesando..." } ; {VAR = VAR + $2} ; END { print VAR} '
+  288  # los dos guiones indican que no toma el (-) como opción y busca ese patron en el archivo
+  289  grep -- -2021  mexico.cvs  | awk 'BEGIN { print "Procesando..." } ; {VAR = VAR + $2} ; END { print VAR} '
+  290  grep -- -2022  mexico.cvs  | awk 'BEGIN { print "Procesando..." } ; {VAR = VAR + $2} ; END { print VAR} '
+  291  grep -- -2023  mexico.cvs  | awk 'BEGIN { print "Procesando..." } ; {VAR = VAR + $2} ; END { print VAR} '
+  292  vim consulta
+  293  ./consulta 02 2022
+  294  chmod a+x consulta
+  295  ./consulta 02 2022
+  296  vim colsulta
+  297  vim consulta
+  298  ./colsuta 01 2020
+  299  ./consulta 03 2021
+  300  vim consulta
+  301  ./ consulta 01 2021
+  302  ./consulta 01 2021
+  303  vim consulta
+  304  ./consulta 01 2021
+  305  vim consulta
+  306  vim anual.covid
+  307  echo sonora | tr [a-z] [A-Z]
+  308  vim anual.covid
+  309  man vim
+  310  vim anual.covid
+  311  exit
+  312  mkdir scripts
+  313  cd scripts/
+  314  ls -all
+  315  git --help
+  316  git init
+  317  ls -all
+  318  ls .git
+  319  git status
+  320  ls ../
+  321  ../programas
+  322  pwd
+  323  cp ../pro
+  324  cp ../programas
+  325  git status
+  326  git add procesa anual.covid
+  327  git add anual.covid
+  328  ls -all
+  329  cp ../programas
+  330  git commit
+  331  git config --global user.email "michelneftali47@gmail.com"
+  332  git config --global user.name "michel"
+  333  git commit
+  334  git add procesa
+  335  ls
+  336  ls ..
+  337  cp procesa 
+  338* 
+  339  cp ../procesa 
+  340  cp ../procesa .
+  341  ls
+  342  git add procesa 
+  343  git commit
+  344  export EDITOR=vim
+  345  git commit
+  346  git log
+  347  vim procesa
+  348  git status
+  349  git add anual.covid
+  350  git add .
+  351  cp ../anual.covid .
+  352  ls
+  353  git add .
+  354  git status
+  355  git commit -m "Se modificó archivo"
+  356  vim procesa
+  357  git log
+  358  vim anual.covid 
+  359  git log
+  360  mv procesa procesa.covi
+  361  ls
+  362  git status
+  363  git restore procesa
+  364  ls
+  365  rm procesa.covi
+  366  ls
+  367  git status
+  368  git mv procesa procesa.covid
+  369  git status
+  370  git add anual.covid
+  371  git commit
+  372  git status
+  373  git log
+  374  git add .
+  375  git commit -m "Se agrega gitignore"
+  376  ls
+  377  git log --author=michel
+  378  git log --author=juan
+  379  git diff
+  380  vim procesa
+  381  ls
+  382  vim procesa.covid
+  383  git diff
+  384  #git branch metodo2
+  385  git status
+  386  git add .
+  387  git commit -m "Agregué líneas"
+  388  git branch metodo2
+  389  git log
+  390  git switch metodo2
+  391  git status
+  392  ls
+  393  git rm anual.covid
+  394  git status
+  395  git log
+  396  git commit -m "Borré"
+  397  git log
+  398  git switch master
+  399  ls
+  400  git switch metodo2
+  401  ls
+  402  vim procesa.covid 
+  403  git add .
+  404  git commit -m "Agregué #"
+  405  git log
+  406  git switch master
+  407  cat procesa.covid 
+  408  git merge metodo2
+  409  cat procesa.covid 
+  410  git log
+  411  git clone https://github.com/vneogi199/Air-Quality-Index-Prediction-using-Python/blob/13711ad0723ba7ab646a555e0b501f8e9d792d3c/aqi_preprocessing.py
+  412  git clone https://github.com/vneogi199/Air-Quality-Index-Prediction-using-Python.git
+  413  git pull
+  414  ls
+  415  git remote add origin https://github.com/Micxfh/git_curso.git
+  416  git branch -M master
+  417  git prush -u origin master
+  418  git push -u origin master
+  419  git remote add origin git@github.com:Micxfh/git_curso.git
+  420  git branch -M master
+  421  git push -u origin master
+  422  git remote remove origin git@github.com:Micxfh/git_curso.git
+  423  git remote remove origin https://github.com/Micxfh/git_curso.git
+  424  git remote add origin git@github.com:Micxfh/git_curso.git
+  425  git remote remove origin 
+  426  git remote add origin git@github.com:Micxfh/git_curso.git
+  427  git branch -M master
+  428  git push -u origin master
+  429  ssh-keygen
+  430  cat /opt/cursos/2024/semestre1/gnu/a.9003/.ssh/id_rsa.pub
+  431  git remote add origin git@github.com:Micxfh/git_curso.git
+  432  git remote remove origin
+  433  git remote add origin git@github.com:Micxfh/git_curso.git
+  434  git branch -M master
+  435  git push -u origin master
+  436  history
+
