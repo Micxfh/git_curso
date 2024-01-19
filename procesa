@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #para copiar una linea presionar en modo comando yy
 #para pegar una linea presionar p
 #para borrar una linea en modo comando presionar dd
