@@ -1,0 +1,28 @@
+#para copiar una linea presionar en modo comando yy
+#para pegar una linea presionar p
+#para borrar una linea en modo comando presionar dd
+#para guardar y salir :x
+#i para inserta
+#grep -i ver covid.csv | cut -d, -f1-3 --complement | tr "," "+" |b
+#./procesa ESTADO 
+#
+#el valor de ESTADO se encuentra en 
+#la variable $1
+#$0 es el nombre del programa
+#
+#set -x
+#obtener lista
+#cat covid.csv | cut -d, -f3 | grep -v Nacional | grep -v nombre
+#for cat covid.csv | cut -d, -f3 | grep -v Nacional | grep -v nombre
+
+for ESTADO in $(cat covid2.csv | cut -d, -f3 | grep -v Nacional | grep -v nombre)
+
+#echo "Bienvenido al programa de $0"
+do
+
+echo "PROCESANDO EL ESTADO DE $ESTADO $(grep -i "$ESTADO" covid2.csv | cut -d, -f1-3 --complement | tr "," "+" | bc)"
+
+done | sort -k 2 -n
+
+#queremos que ordene la segunda
+#PROCESANDO EL ESTADO DE "ZACATECAS"...       #84133
