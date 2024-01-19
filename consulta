@@ -1,0 +1,22 @@
+
+#./consulta VAR1 VAR2
+
+
+MES=$1
+ANIO=$2
+#01-12 
+echo "Procesando para el estado de Veracruz"
+
+#for MES in {01..12}
+
+#do 
+  #for ANIO in {2020..2023}
+
+#{01..} coloca los intevalos
+
+#do
+  echo "Registros para el mes  $MES y el año  $ANIO"
+  grep -- $MES-$ANIO  mexico.cvs  | awk 'BEGIN { print "Procesando..." } ; {VAR = VAR + $2} ; END { print VAR} '
+ # done
+
+#done
